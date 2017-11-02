@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery-3.2.1.js"></script>
+  <meta charset="utf-8">
+  <title>exercice 1</title>
+</head>
+<body>
+  <button id="button">Click</button>
+  <p><a id="count">0</a></p>
+  <script>
+  $('#button').click(function() {
+    $('#count').html(function(i, val) {
+      return val*1+1
+    });
+  });
+  </script>
+</body>
+</html>
